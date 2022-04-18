@@ -607,35 +607,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 32rem;
 }
 
-@-webkit-keyframes snap-up {
-  0% {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes snap-up {
-  0% {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
-.animate-snapUp {
-  -webkit-animation: snap-up 0.7s linear;
-          animation: snap-up 0.7s linear;
-}
-
 .flex-row {
   flex-direction: row;
 }
