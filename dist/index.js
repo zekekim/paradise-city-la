@@ -1,3 +1,4 @@
+//Burger Menu Collapse/Decollapse
 const button = document.querySelector('#menu-button'); // Hamburger Icon
 const menu = document.querySelector('#menu'); // Menu
 
@@ -20,3 +21,4 @@ const callback = function (entries) {
 const observer = new IntersectionObserver(callback);
 
 observer.observe(document.querySelector('#snap-up'));
+

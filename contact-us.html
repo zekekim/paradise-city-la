@@ -6,17 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./dist/styles.css" rel="stylesheet">
-    <title>paradise records</title>
+    <title>CONTACT US</title>
 </head>
 
 <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous"
-        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0&appId=930658510613573&autoLogAppEvents=1"
-        nonce="1sKqUg0e"></script>
     <nav class="bg-white border-b border-gray-200 px-2 sm:px-4 py-2.5">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
-            <a href="#" class="flex items-center">
+            <a href="index.html" class="flex items-center">
                 <img src="./assets/logo.svg" class="mr-3 h-32 " alt="Logo" />
             </a>
             <button id="menu-button" type="button"
@@ -36,17 +32,17 @@
             <div class="hidden w-full transition-all md:w-auto md:items-center md:flex" id="menu">
                 <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                     <li>
-                        <a href="#"
-                            class="block py-2 pr-4 pl-3 text-white border border-red-700 bg-red-700 transition-all font-bold hover:border-red-700 md:bg-transparent md:text-red-700 md:border-0 md:p-0"
+                        <a href="index.html"
+                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 transition-all hover:font-bold  hover:bg-red-200 hover:border-red-200 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0"
                             aria-current="page">HOME</a>
                     </li>
                     <li>
                         <a href="gallery.html"
-                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 transition-all hover:font-bold  hover:bg-orange-200 hover:border-orange-200 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 ">GALLERY</a>
+                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 transition-all hover:font-bold  hover:bg-orange-200 hover:border-orange-200 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0">GALLERY</a>
                     </li>
                     <li>
                         <a href="locations.html"
-                            class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 transition-all hover:font-bold  hover:bg-yellow-200 hover:border-yellow-200 md:hover:bg-transparent md:border-0 md:hover:text-yellow-700 md:p-0 ">LOCATIONS</a>
+                            class="block py-2 pr-4 pl-3 text-white border border-yellow-700 bg-yellow-700 transition-all font-bold hover:border-yellow-700 md:bg-transparent md:text-yellow-700 md:border-0 md:p-0">LOCATIONS</a>
                     </li>
                     <li>
                         <a href="https://www.discogs.com/seller/paradisecityrecords/profile"
@@ -60,28 +56,62 @@
             </div>
         </div>
     </nav>
-    <div class="group bg-hero-pattern h-[70vh] bg-center bg-fixed bg-cover">
-        <div class="duration-500 bg-black bg-opacity-50 w-full h-full group-hover:bg-opacity-0 transition-all">
-            <div class="max-w-lg px-8 py-8">
-                <h1
-                    class="duration-500 bg-black bg-opacity-0 px-4 py-4 font-bold text-8xl text-white text-left group-hover:opacity-0">
-                    RECORDS AND STUFF.</h1>
+    <div class="flex flex-col items-center py-20 justify-between">
+        <p class="font-bold text-5xl pb-10">CONTACT US</p>
+        <form class="w-full max-w-lg" action="" method="post" id="email-form">
+            <!-- Name Field -->
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                        for="grid-first-name" name="visitor_name">
+                        Name
+                    </label>
+                    <input
+                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                        id="name" type="text" placeholder="Jane Doe" required>
+                    <!-- Error Message for Name -->
+                    <p class="hidden text-red-500 text-xs italic" id="nameError">Please fill out this field.</p>
+                </div>
             </div>
-        </div>
-
-    </div>
-    <div class="flex px-10 pb-10 flex-col h-auto justify-between">
-        <h1 class="py-10 font-bold text-7xl text-left">ABOUT</h1>
-        <div id="snap-up" class = "flex flex-row animate-snapUp space-x-10 h-96">
-            <p class="text-center text-xl text-gray-700 overflow-scroll">We belong to the cult of the <b>bygone</b> and <b>worship</b> at the feet of faded memories. We look at the shop kind of like a nerd heaven, filled with all the stuff we loved and have loved. Records, toys, graphic novels, VHS tapes, vintage tee shirts, old video games, Choose-Your-Own-Adventure books, and so on. <br><br>
-
-                We like music of many forms, many made for dancing. Be it Hip Hop, Soul, Disco, Funk, House, Italo, or Rock & Roll. We also believe in the benefits of a clear and calm mind. In those instances, we enjoy putting on an Ambient record or one of our large selection of Library Music LP's. <br><br>
-                
-                We believe real life relationships and contributing to the community are important, so we welcome any and all to join us in this gathering of the minds to uplift our spirits from the exigencies of everyday life. </p>
-                <img src="./assets/paradisecityoutside.png" class="object-scale-down">
-        </div>
-        
-        
+            <!-- E-mail Field -->
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                        for="grid-password">
+                        E-mail
+                    </label>
+                    <input
+                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="email" type="email" name="visitor_email" required>
+                    <!-- Error Message for Email -->
+                    <p class="hidden text-red-500 text-xs italic" id="emailError">Please fill out this field.</p>
+                </div>
+            </div>
+            <!-- Message Field -->
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                        for="grid-password">
+                        Message
+                    </label>
+                    <textarea
+                        class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                        id="message" name="visitor_message" required></textarea>
+                    <!-- Error Message for Message -->
+                    <p class="hidden text-red-500 text-xs italic" id="messageError">Please fill out this field.</p>
+                </div>
+            </div>
+            <div class="md:flex md:items-center">
+                <div class="md:w-1/3">
+                    <button
+                        class="shadow bg-black hover:bg-gray-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4"
+                        type="submit" id="submit">
+                        Send
+                    </button>
+                </div>
+                <div class="md:w-2/3"></div>
+            </div>
+        </form>
     </div>
     <footer class="flex flex-col text-center text-white items-center justify-center" style="background-color: #f1f1f1;">
         <div class="container pt-9">
@@ -121,8 +151,7 @@
             <a class="text-gray-800" href="https://tailwind-elements.com/">Not an Official Site</a>
         </div>
     </footer>
-
 </body>
-<script src="./dist/index.js"></script>
+<script src="./dist/form.js"></script>
 
 </html>
